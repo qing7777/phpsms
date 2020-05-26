@@ -2,6 +2,8 @@
 
 namespace Qing7777\PhpSms;
 
+use Qing7777\PhpSms\Agents\ParasiticAgent;
+use Qing7777\PhpSms\Exceptions\PhpSmsException;
 use Toplan\TaskBalance\Driver;
 use Toplan\TaskBalance\Task;
 
