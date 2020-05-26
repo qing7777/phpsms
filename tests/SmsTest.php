@@ -1,6 +1,6 @@
 <?php
 
-use Toplan\PhpSms\Sms;
+use Qing7777\PhpSms\Sms;
 
 class SmsTest extends PHPUnit_Framework_TestCase
 {
@@ -18,7 +18,7 @@ class SmsTest extends PHPUnit_Framework_TestCase
 
     public function testMakeSms()
     {
-        $this->assertInstanceOf('Toplan\PhpSms\Sms', self::$sms);
+        $this->assertInstanceOf('Qing7777\PhpSms\Sms', self::$sms);
     }
 
     public function testHasAgent()
@@ -33,9 +33,9 @@ class SmsTest extends PHPUnit_Framework_TestCase
     public function testGetAgent()
     {
         $agent = Sms::getAgent('Log');
-        $this->assertInstanceOf('Toplan\PhpSms\LogAgent', $agent);
+        $this->assertInstanceOf('Qing7777\PhpSms\LogAgent', $agent);
         $luosimao = Sms::getAgent('Luosimao');
-        $this->assertInstanceOf('Toplan\PhpSms\LuosimaoAgent', $luosimao);
+        $this->assertInstanceOf('Qing7777\PhpSms\LuosimaoAgent', $luosimao);
     }
 
     public function testGetTask()

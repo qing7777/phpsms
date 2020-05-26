@@ -1,6 +1,6 @@
 <?php
 
-use Toplan\PhpSms\Sms;
+use Qing7777\PhpSms\Sms;
 
 class ProtectedTest extends PHPUnit_Framework_TestCase
 {

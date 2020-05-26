@@ -1,6 +1,9 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms\Agents;
+
+use Qing7777\PhpSms\Interfaces\ContentSms;
+use Qing7777\PhpSms\Interfaces\VoiceCode;
 
 /**
  * Class YunPianAgent

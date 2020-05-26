@@ -1,6 +1,6 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms\Interfaces;
 
 interface TemplateVoice
 {

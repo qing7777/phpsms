@@ -1,8 +1,10 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms\Agents;
 
-use REST;
+use Qing7777\PhpSms\Interfaces\TemplateSms;
+use Qing7777\PhpSms\Interfaces\VoiceCode;
+use Qing7777\PhpSms\AgentUtils\YunTongXun;
 
 /**
  * Class YunTongXunAgent
@@ -38,7 +40,7 @@ class YunTongXunAgent extends Agent implements TemplateSms, VoiceCode
 
     protected function rest()
     {
-        $rest = new REST($this->serverIP, $this->serverPort, '2013-12-26', 'json');
+        $rest = new YunTongXun($this->serverIP, $this->serverPort, '2013-12-26', 'json');
         $rest->setAccount($this->accountSid, $this->accountToken);
         $rest->setAppId($this->appId);
 

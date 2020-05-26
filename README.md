@@ -41,13 +41,14 @@
 
 # 安装
 
+源版本
 ```php
 composer require toplan/phpsms:~1.8
 ```
 
-开发中版本
+适配psr-4版本
 ```php
-composer require toplan/phpsms:dev-master
+composer require qing7777/phpsms
 ```
 
 # 快速上手
@@ -101,7 +102,7 @@ Sms::scheme([
 
 ```php
 require('path/to/vendor/autoload.php');
-use Toplan\PhpSms\Sms;
+use Qing7777\PhpSms\Sms;
 
 // 接收人手机号
 $to = '1828****349';
@@ -150,13 +151,13 @@ Sms::voice('02343')
 //服务提供器
 'providers' => [
     ...
-    Toplan\PhpSms\PhpSmsServiceProvider::class,
+    Qing7777\PhpSms\PhpSmsServiceProvider::class,
 ]
 
 //别名
 'aliases' => [
     ...
-    'PhpSms' => Toplan\PhpSms\Facades\Sms::class,
+    'PhpSms' => Qing7777\PhpSms\Facades\Sms::class,
 ]
 ```
 
@@ -520,9 +521,9 @@ $result = $sms->send(true);
 
 - step 2
 
-新建一个继承`Toplan\PhpSms\Agent`抽象类的代理器类，建议代理器类名为`FooAgent`，建议命名空间为`Toplan\PhpSms`。
+新建一个继承`Qing7777\PhpSms\Agent`抽象类的代理器类，建议代理器类名为`FooAgent`，建议命名空间为`Qing7777\PhpSms`。
 
-> 如果类名不为`FooAgent`或者命名空间不为`Toplan\PhpSms`，在使用该代理器时则需要指定代理器类，详见[高级调度配置](#高级调度配置)。
+> 如果类名不为`FooAgent`或者命名空间不为`Qing7777\PhpSms`，在使用该代理器时则需要指定代理器类，详见[高级调度配置](#高级调度配置)。
 
 - step 3
 
@@ -544,7 +545,7 @@ $result = $sms->send(true);
 
 ### 指定代理器类
 
-如果你自定义了一个代理器，类名不为`FooAgent`或者命名空间不为`Toplan\PhpSms`，
+如果你自定义了一个代理器，类名不为`FooAgent`或者命名空间不为`Qing7777\PhpSms`，
 那么你还可以在调度配置时指定你的代理器使用的类。
 
 * 配置方式：

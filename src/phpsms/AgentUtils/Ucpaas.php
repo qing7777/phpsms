@@ -1,5 +1,6 @@
 <?php
 
+namespace Qing7777\PhpSms\AgentUtils;
 /**
  * Created by PhpStorm.
  * User: UCPAAS JackZhao

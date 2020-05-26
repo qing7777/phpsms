@@ -1,7 +1,11 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms\Agents;
 
+
+use Qing7777\PhpSms\Interfaces\TemplateSms;
+use Qing7777\PhpSms\Interfaces\VoiceCode;
+use Qing7777\PhpSms\AgentUtils\Ucpaas;
 /**
  * Class UcpaasAgent
  *
@@ -25,7 +29,7 @@ class UcpaasAgent extends Agent implements TemplateSms, VoiceCode
 
     protected function ucpass()
     {
-        return new \Ucpaas([
+        return new Ucpaas([
             'accountsid' => $this->accountSid,
             'token'      => $this->accountToken,
         ]);

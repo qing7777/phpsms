@@ -1,5 +1,5 @@
 {
-  "name": "toplan/phpsms",
+  "name": "qing7777/phpsms",
   "description": "Probably the most intelligent, elegant sms send library in php",
   "license": "MIT",
   "keywords": ["sms", "php", "phpsms", "sms library"],
@@ -19,18 +19,9 @@
   },
   "autoload": {
     "psr-4": {
-      "Toplan\\PhpSms\\": [
-        "src/phpsms/",
-        "src/phpsms/agents/",
-        "src/phpsms/interfaces/"
-      ],
-      "Toplan\\PhpSms\\Facades\\": [
-        "src/phpsms/facades/"
-      ]
-    },
-    "classmap": [
-      "src/phpsms/lib/"
-    ]
+      "Qing7777\\PhpSms\\":"src/phpsms/"
+
+    }
   },
   "autoload-dev": {
     "classmap": [

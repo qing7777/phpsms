@@ -1,6 +1,14 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms\Agents;
+
+use Qing7777\PhpSms\Interfaces\ContentSms;
+use Qing7777\PhpSms\Interfaces\ContentVoice;
+use Qing7777\PhpSms\Interfaces\FileVoice;
+use Qing7777\PhpSms\Interfaces\TemplateSms;
+use Qing7777\PhpSms\Interfaces\TemplateVoice;
+use Qing7777\PhpSms\Interfaces\VoiceCode;
+use Qing7777\PhpSms\Util;
 
 abstract class Agent
 {

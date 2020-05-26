@@ -1,6 +1,6 @@
 <?php
 
-namespace Toplan\PhpSms;
+namespace Qing7777\PhpSms;
 
 use Toplan\TaskBalance\Driver;
 use Toplan\TaskBalance\Task;
